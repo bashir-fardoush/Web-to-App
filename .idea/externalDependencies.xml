@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalDependencies">
+    <plugin id="Dart" />
+    <plugin id="JUnit" />
+    <plugin id="com.android.tools.apk" />
+    <plugin id="io.flutter" />
+    <plugin id="org.jetbrains.plugins.gradle" />
+  </component>
+</project>
