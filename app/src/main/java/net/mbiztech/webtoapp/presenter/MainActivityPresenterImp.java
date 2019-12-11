@@ -1,4 +1,8 @@
-package net.mbiztech.webtoapp;
+package net.mbiztech.webtoapp.presenter;
+
+import net.mbiztech.webtoapp.common.RequestCompleteListener;
+import net.mbiztech.webtoapp.model.MainActivityModel;
+import net.mbiztech.webtoapp.view.MainActivityView;
 
 public class MainActivityPresenterImp implements MainActivityPresenter {
 
@@ -24,6 +28,7 @@ public class MainActivityPresenterImp implements MainActivityPresenter {
 
             view.handleProgressBarVisibility(true);
             view.toggleRetryButtonVisibility(false);
+            view.setMessage("Please wait while sending information...");
 
             model.sendImeiToDb(user_id, new RequestCompleteListener<String>() {
                 @Override

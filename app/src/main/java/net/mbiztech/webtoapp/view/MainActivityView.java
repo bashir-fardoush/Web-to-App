@@ -1,4 +1,4 @@
-package net.mbiztech.webtoapp;
+package net.mbiztech.webtoapp.view;
 
 public interface MainActivityView {
     void handleProgressBarVisibility(boolean visible);

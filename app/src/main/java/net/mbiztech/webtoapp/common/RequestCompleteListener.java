@@ -1,4 +1,4 @@
-package net.mbiztech.webtoapp;
+package net.mbiztech.webtoapp.common;
 
 public interface RequestCompleteListener<T> {
     void onRequestSuccess(T object);

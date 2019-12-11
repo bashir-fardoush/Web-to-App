@@ -1,4 +1,4 @@
-package net.mbiztech.webtoapp;
+package net.mbiztech.webtoapp.presenter;
 
 public interface MainActivityPresenter {
 

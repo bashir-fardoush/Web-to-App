@@ -1,4 +1,4 @@
-package net.mbiztech.webtoapp;
+package net.mbiztech.webtoapp.model;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
@@ -10,6 +10,8 @@ import android.util.Log;
 
 import androidx.core.app.ActivityCompat;
 
+import net.mbiztech.webtoapp.common.RequestCompleteListener;
+import net.mbiztech.webtoapp.Util;
 import net.mbiztech.webtoapp.network.ApiClient;
 import net.mbiztech.webtoapp.network.ApiInterface;
 

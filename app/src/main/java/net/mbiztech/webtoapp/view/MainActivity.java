@@ -1,4 +1,4 @@
-package net.mbiztech.webtoapp;
+package net.mbiztech.webtoapp.view;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,11 +14,16 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
+import net.mbiztech.webtoapp.model.MainActivityModel;
+import net.mbiztech.webtoapp.model.MainActivityModelImp;
+import net.mbiztech.webtoapp.presenter.MainActivityPresenter;
+import net.mbiztech.webtoapp.presenter.MainActivityPresenterImp;
+import net.mbiztech.webtoapp.R;
 import net.mbiztech.webtoapp.databinding.ActivityMainBinding;
 
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity implements MainActivityView{
+public class MainActivity extends AppCompatActivity implements MainActivityView {
     private static final int PHONE_STATE_PERMISSION_REQUEST_CODE = 101;
     private int user_id = 0;
     private MainActivityPresenter presenter;
@@ -29,7 +34,7 @@ public class MainActivity extends AppCompatActivity implements MainActivityView{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //setContentView(R.layout.activity_main);
-        binding = DataBindingUtil.setContentView(this,R.layout.activity_main);
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
 
         model = new MainActivityModelImp(getApplicationContext());
         presenter = new MainActivityPresenterImp(this,model);

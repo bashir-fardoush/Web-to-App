@@ -1,4 +1,6 @@
-package net.mbiztech.webtoapp;
+package net.mbiztech.webtoapp.model;
+
+import net.mbiztech.webtoapp.common.RequestCompleteListener;
 
 public interface MainActivityModel {
 
